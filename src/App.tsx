@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import ScrollReveal from 'scrollreveal';
-import { AboutComponent, ContactComponent, FooterComponent, HeaderComponent, HeroComponent, PortfolioComponent, ServicesComponent, TestimonialsComponent } from "./components"
+import { AboutComponent, FooterComponent, HeaderComponent, HeroComponent, PortfolioComponent, ServicesComponent } from "./components"
 
 export const App = () => {
 
@@ -49,15 +49,6 @@ export const App = () => {
       const header = document.querySelector('.header');
       if (header) {
         header.classList.toggle('sticky', window.scrollY > 100);
-      }
-    };
-
-    const removeMenuIconAndNavbarActive = () => {
-      const menuIcon = document.querySelector('#menu-icon');
-      const navbar = document.querySelector('.navbar');
-      if (menuIcon && navbar) {
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
       }
     };
 
